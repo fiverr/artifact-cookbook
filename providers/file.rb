@@ -40,7 +40,6 @@ def load_current_resource
   elsif Chef::Artifact.from_s3?(@new_resource.location)
 
     chef_gem "aws-sdk" do
-      version "2.1.32"
       action :install
     end
 
